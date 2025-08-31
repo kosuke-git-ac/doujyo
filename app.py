@@ -6,5 +6,11 @@ app = Flask(__name__)
 def index():
     return 'Hello World'
 
+@app.route('/test')
+def test():
+    return 'Hello Test!!'
+
+
+
 if __name__ == "__main__":
     app.run(debug=True,port=5001)
